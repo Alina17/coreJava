@@ -9,6 +9,7 @@ public class Main {
 		UserInput userInput = new UserInput();
 		userInput.in();
 		
-		
+		WhileLoop loop = new WhileLoop();
+		loop.counter();
 	}
 }
