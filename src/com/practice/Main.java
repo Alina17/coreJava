@@ -18,7 +18,10 @@ public class Main {
 //		MultidemesionalArray arr = new MultidemesionalArray();
 //		arr.printarr(new int[][] { { 1, 2, 3 }, { 4, 5, 6 }, {7, 8, 9} });
 		
-		Recursion fact = new Recursion();
-		fact.printFactorial(2);
+//		Recursion fact = new Recursion();
+//		fact.printFactorial(2);
+		
+		ForEachLoop forEach = new ForEachLoop();
+		forEach.average(1,2);
 	}
 }
