@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import com.practice.booking.Plane;
+import com.practice.grades.Student;
+import com.practice.grades._Class;
 import com.practice.interfaces.Animal;
 import com.practice.interfaces.Cat;
 import com.practice.interfaces.Cow;
@@ -86,26 +89,50 @@ public class Main {
 //		
 //		System.out.println(fridge.getInventoryValue());
 		
-		Summary sum = new Summary();
+//		Summary sum = new Summary();
+//		
+//		sum.add(
+//			new Movies(
+//				"little mermaid",
+//				LocalDate.of(2019, Month.OCTOBER, 10).atStartOfDay(),
+//				LocalDate.of(2019, Month.OCTOBER, 17).atStartOfDay()
+//			)
+//		);
+//		
+//		sum.add(
+//			new Movies(
+//				"tokyo ghoul",
+//				LocalDate.of(2019, Month.OCTOBER, 10).atStartOfDay(),
+//				LocalDate.of(2019, Month.OCTOBER, 17).atStartOfDay()
+//			)
+//		);
+//	
+//
+//		sum.getOverdueFee();
+//		
+//		Plane plane = new Plane();
+//		
+//		plane.bookSeat(1);
+//		plane.bookSeat(1);
+//		plane.bookSeat(7);
+//		
+//		plane.getAvailableSeats();
+//		plane.getTotalAmount();
 		
-		sum.add(
-			new Movies(
-				"little mermaid",
-				LocalDate.of(2019, Month.OCTOBER, 10).atStartOfDay(),
-				LocalDate.of(2019, Month.OCTOBER, 17).atStartOfDay()
-			)
-		);
+		_Class calc = new _Class();
 		
-		sum.add(
-			new Movies(
-				"tokyo ghoul",
-				LocalDate.of(2019, Month.OCTOBER, 10).atStartOfDay(),
-				LocalDate.of(2019, Month.OCTOBER, 17).atStartOfDay()
-			)
-		);
-	
-
-		sum.getOverdueFee();
+		calc.add(new Student("Vasya",46));
+		calc.add(new Student("Lusya",98));
+		calc.add(new Student("Jade",35));
+		calc.add(new Student("Julia",85));
+		calc.add(new Student("Boris",67));
+		
+		calc.getAverage();
+		
+		
+		
+		
+		
 		
 	}
 	
