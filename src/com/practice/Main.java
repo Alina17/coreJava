@@ -6,6 +6,10 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import com.practice.bank.Account;
+import com.practice.bank.BusinessAcount;
+import com.practice.bank.CheckingAccount;
+import com.practice.bank.SavingAccount;
 import com.practice.booking.Plane;
 import com.practice.grades.Student;
 import com.practice.grades._Class;
@@ -16,6 +20,9 @@ import com.practice.interfaces.Dog;
 import com.practice.interfaces.Sheep;
 import com.practice.inventory.Inventory;
 import com.practice.inventory.Product;
+import com.practice.library.Book;
+import com.practice.library.Library;
+import com.practice.library.User;
 import com.practice.rentals.Movies;
 import com.practice.rentals.Summary;
 
@@ -119,20 +126,47 @@ public class Main {
 //		plane.getAvailableSeats();
 //		plane.getTotalAmount();
 		
-		_Class calc = new _Class();
-		
-		calc.add(new Student("Vasya",46));
-		calc.add(new Student("Lusya",98));
-		calc.add(new Student("Jade",35));
-		calc.add(new Student("Julia",85));
-		calc.add(new Student("Boris",67));
-		
-		calc.getAverage();
-		
-		
+//		_Class calc = new _Class();
+//		
+//		calc.add(new Student("Vasya",46));
+//		calc.add(new Student("Lusya",98));
+//		calc.add(new Student("Jade",35));
+//		calc.add(new Student("Julia",85));
+//		calc.add(new Student("Boris",67));
+//		
+//		calc.getAverage();
 		
 		
 		
+//		Account checking = new CheckingAccount(900.00);
+//		Account saving = new SavingAccount(563000.00);
+//		Account business = new BusinessAcount(1000000.00);
+		
+		
+//		checking.deposit(350.50);
+//		System.out.println(checking.getBalance());
+//		checking.withdraw(1250.5);
+//		System.out.println(checking.getBalance());
+//		checking.transfer(saving,100.00);
+//		System.out.println(saving.getBalance());
+		
+		
+		
+		Library library = new Library();
+		
+		library.add(new Book("Harry Potter", 13654789, 860));
+		library.add(new Book("Harry Potter 2", 13654659, 561));
+		library.add(new Book("Harry Potter 3", 1984219, 987));
+		library.add(new Book("Harry Potter 4", 13587654, 753));
+		library.add(new Book("Harry Potter 5", 13933671, 821));
+		
+		
+		
+		library.checkOut(new User("Alina"), "Harry Potter");
+		library.checkOut(new User("Alina"), "Harry Potter");
+		
+		
+		library.getAvailable();
 		
 	}
 	
